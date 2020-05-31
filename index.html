@@ -84,6 +84,7 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-c
 
 <div class="sc-fzplWN hRBsWH">
 <h3 class="sc-fznyAO CWQMf">行動</h3>
+<p id="cooldown"></p>
 <button class="sc-AxgMl llLWDd" onclick="FuncRabbit()">狩獵兔肉</button>
 <button class="sc-AxgMl llLWDd" onclick="FuncTrain()">自主訓練</button>
 <button class="sc-AxgMl llLWDd" onclick="FuncPicnic()">外出野餐</button>
@@ -100,32 +101,64 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-c
 </div>
 
 <script>
+var countdownnumber=100;
+var countdownid;
+
 function FuncFloor() {
   document.getElementById("onclick-text").innerHTML = "遊戲已經通關了，已經不需要什麼樓層獎勵了。";
 }
 function FuncRabbit() {
+  countdownnumber=100;
+  initial();
   document.getElementById("onclick-text").innerHTML = "還記得你獵到超稀有S級食材的那次嗎，桐人君。";
 }
 function FuncTrain() {
+  countdownnumber=100;
+  initial();
   document.getElementById("onclick-text").innerHTML = "在排行榜上的每一次切磋，彷彿就在昨天發生的呢。";
 }
 function FuncPicnic() {
+  countdownnumber=100;
+  initial();
   document.getElementById("onclick-text").innerHTML = "那次我拿出三明治時，你驚喜的表情我還記得呢。";
 }
 function FuncAsuna() {
+  countdownnumber=100;
+  initial();
   document.getElementById("onclick-text").innerHTML = "這個你還是忘記好了。";
 }
 function FuncUE() {
+  countdownnumber=100;
+  initial();
   document.getElementById("onclick-text").innerHTML = "還記得我們遇到的那個AI嗎?他居然拿4把刀，還會星爆呢。雖然最後都在拼拳的樣子www";
 }
 function FuncSleep() {
+  countdownnumber=100;
+  initial();
   document.getElementById("onclick-text").innerHTML = "那個艾恩葛朗特最舒服的日子，我也還記得呢。";
 }
 function FuncFish() {
+  countdownnumber=100;
+  initial();
   document.getElementById("onclick-text").innerHTML = "看我一刀把那隻湖中之主切成生魚片!!";
 }
 function FuncPrac() {
   document.getElementById("onclick-text").innerHTML = "遊戲已經通關了，已經不需要再修行了。";
+}
+function initial(){ countdownfunc(); }
+function countdownfunc(){
+  var x=document.getElementById("countdown");
+  document.getElementById("cooldown").innerHTML = "冷卻倒數："+countdownnumber+" 秒，現在一般行動的CD為100秒，顯示不正確的請校準你電腦/手機的時間";
+  if (countdownnumber==0){ 
+    document.getElementById("cooldown").innerHTML = "";
+    clearTimeout(countdownid);
+  }else{
+    countdownnumber--;
+    if(countdownid){
+      clearTimeout(countdownid);
+    }
+    countdownid=setTimeout(countdownfunc,1000);
+  }
 }
 </script>
 
