@@ -23,7 +23,7 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-c
 
 <div class="sc-fzplWN hRBsWH">
 <div class="sc-fznMnq biVOqy">
-*資料庫還沒弄好 各位先當桐人吧
+~資料庫版本 2020.06.01 15:30~
 <!-- 個人資料卡 -->
 </div>
 
@@ -36,9 +36,10 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-c
           for(var i in d) {
             var item = {};
             item.name = d[i].gsx$name.$t;
+	    item.info = d[i].gsx$info.$t;
             item.title = d[i].gsx$title.$t;
             item.thumbnail = d[i].gsx$thumbnail.$t;
-			item.words = d[i].gsx$words.$t;
+	    item.words = d[i].gsx$words.$t;
             items.push(item);
           }
           console.table(items);
@@ -52,11 +53,11 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-c
             <tbody class="sc-AxirZ bJCmFu">
             <tr class="sc-AxiKw eSbheu">
             <td colspan=2 class="sc-AxhUy dRdZbR"><div class="sc-fzozJi buidMi">
-            <picture><img src="src/kirito.png" srcset sizes></picture></div>
+            <picture><img src="${items[i].thumbnail}" srcset sizes></picture></div>
             <tr class="sc-AxiKw eSbheu">
             <th class="sc-AxhCb lnpmAI">暱稱<td class="sc-AxhUy dRdZbR">${items[i].name}
             <tr class="sc-AxiKw eSbheu">
-            <th class="sc-AxhCb lnpmAI">稱號<td class="sc-AxhUy dRdZbR">SAO生還者
+            <th class="sc-AxhCb lnpmAI">${items[i].info}<td class="sc-AxhUy dRdZbR">${items[i].title}
             <tr class="sc-AxiKw eSbheu">
             <td colspan=2 class="sc-AxhUy dRdZbR">${items[i].words}
             </table>
