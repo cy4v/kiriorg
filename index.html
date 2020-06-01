@@ -94,10 +94,10 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-c
 <button class="sc-AxgMl llLWDd" onclick="FuncFish()">釣魚</button><br>
 <p>修行高CD但可一次獲得較多經驗（與一般行動共用CD），請注意死亡或轉生後CD仍會持續，主要提供給沒時間一直玩的人使用。<p>
 目前修行功能需攻略第一層Boss、或是等級大於25、或累積一定遊玩量後才能使用。</p>
-<button class="sc-AxgMl sc-fznZeY jRQlQf" onclick="FuncPrac()">修行1小時</button>
-<button class="sc-AxgMl sc-fznZeY jRQlQf" onclick="FuncPrac()">修行2小時</button>
-<button class="sc-AxgMl sc-fznZeY jRQlQf" onclick="FuncPrac()">修行4小時</button>
-<button class="sc-AxgMl sc-fznZeY jRQlQf" onclick="FuncPrac()">修行8小時</button>
+<button class="sc-AxgMl sc-fznZeY jRQlQf" onclick="FuncPrac1()">修行1小時</button>
+<button class="sc-AxgMl sc-fznZeY jRQlQf" onclick="FuncPrac2()">修行2小時</button>
+<button class="sc-AxgMl sc-fznZeY jRQlQf" onclick="FuncPrac4()">修行4小時</button>
+<button class="sc-AxgMl sc-fznZeY jRQlQf" onclick="FuncPrac8()">修行8小時</button>
 </div>
 
 <script>
@@ -142,7 +142,24 @@ function FuncFish() {
   initial();
   document.getElementById("onclick-text").innerHTML = "看我一刀把那隻湖中之主切成生魚片!!";
 }
-function FuncPrac() {
+function FuncPrac1() {
+  countdownnumber=3600;
+  initial();
+  document.getElementById("onclick-text").innerHTML = "遊戲已經通關了，已經不需要再修行了。";
+}
+function FuncPrac2() {
+  countdownnumber=7200;
+  initial();
+  document.getElementById("onclick-text").innerHTML = "遊戲已經通關了，已經不需要再修行了。";
+}
+function FuncPrac4() {
+  countdownnumber=14400;
+  initial();
+  document.getElementById("onclick-text").innerHTML = "遊戲已經通關了，已經不需要再修行了。";
+}
+function FuncPrac8() {
+  countdownnumber=28800;
+  initial();
   document.getElementById("onclick-text").innerHTML = "遊戲已經通關了，已經不需要再修行了。";
 }
 function initial(){ countdownfunc(); }
