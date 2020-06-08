@@ -69,14 +69,14 @@ LとRで描く　情熱と友情
           var items = [];
           for(var i in d) {
             var item = {};
-            item.name = d[i].gsx$name.$t;
-            item.title = d[i].gsx$title.$t;
+	    item.name = d[i].gsx$name.$t;
+	    item.title = d[i].gsx$title.$t;
 	    item.gain = d[i].gsx$gain.$t;
-            item.thumbnail = d[i].gsx$thumbnail.$t;
+	    item.thumbnail = d[i].gsx$thumbnail.$t;
 	    item.about = d[i].gsx$about.$t;
 	    item.trophy = d[i].gsx$trophy.$t;
 	    item.other = d[i].gsx$other.$t;
-            items.push(item);
+	    items.push(item);
           }
           console.table(items);
           for(var i in items) {
