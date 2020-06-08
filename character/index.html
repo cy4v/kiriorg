@@ -24,7 +24,41 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-c
 <div class="sc-fzplWN hRBsWH">
 <div class="sc-fznMnq biVOqy">
 <p id="loading">loading...</p>
-<!-- 角色資料卡 -->
+<!--
+
+存在証明する“蒼”生きてゆくための証
+響け　この胸のファクター
+感情共鳴する“奏”強く解き放つ可能性(メロディ)
+今日だって　歌い続けてる
+
+めくるめく時の中で　目を凝らして
+見せてあげる　私たちの未来を
+
+ノイズ混じりの　ためらいかき消して
+LとRで描く　情熱と友情
+
+今なら分かる　あの哀しみが
+試していたのは
+
+まだ　知らない自分
+どんな　明日も叶える力
+君と目覚めさせるため
+もう迷わない
+
+こだまするように
+期待は鳴り止まない
+揺るぎない真実
+私が選んだ　私へと
+
+完全凌駕する“蒼”ここで生きている証
+掲げ　自由なるファクター
+感動共鳴する“想”あの日抱きしめた希望(ひかり)
+いつだって　信じ続けてる
+
+気まぐれな風の隙間　耳を澄まして
+聴かせてあげる　未来へのフレーズを
+
+-->
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -37,11 +71,11 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-c
             var item = {};
             item.name = d[i].gsx$name.$t;
             item.title = d[i].gsx$title.$t;
-			item.gain = d[i].gsx$gain.$t;
+	    item.gain = d[i].gsx$gain.$t;
             item.thumbnail = d[i].gsx$thumbnail.$t;
-			item.about = d[i].gsx$about.$t;
-			item.trophy = d[i].gsx$trophy.$t;
-			item.other = d[i].gsx$other.$t;
+	    item.about = d[i].gsx$about.$t;
+	    item.trophy = d[i].gsx$trophy.$t;
+	    item.other = d[i].gsx$other.$t;
             items.push(item);
           }
           console.table(items);
@@ -70,7 +104,7 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-c
             `;
             $('.biVOqy').append(Card);
           }
-		  document.getElementById("loading").innerHTML = "";
+	  document.getElementById("loading").innerHTML = "";
         });
       });
     </script>
