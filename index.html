@@ -76,7 +76,7 @@
 </div>
 
 <div class="sc-fzplWN hRBsWH"><h3 class="sc-fznyAO CWQMf">網站狀態</h3><div class="sc-fzqBZW eNQuho">
-<input type=text class="sc-AxheI fniENO" value="團長拜託實裝貓耳詩乃啦 嗚嗚嗚"><button class="sc-AxgMl hMeozO">更新</button></div></div>
+<input type=text class="sc-AxheI fniENO" value="團長拜託實裝ALO詩乃和ALO西莉卡啦QQ" id="myStatus"><button class="sc-AxgMl llLWDd" onclick="copyFunction()">複製</button></div></div>
 
 <div class="sc-fzplWN hRBsWH">
 <h3 class="sc-fznyAO CWQMf">修行經驗</h3>
@@ -247,6 +247,16 @@
 <td class="sc-AxhUy dRdZbR">
 </table>
 </div>
+
+<script>
+function copyFunction() {
+  var copyText = document.getElementById("myStatus");
+  copyText.select();
+  copyText.setSelectionRange(0, 30);
+  document.execCommand("copy");
+  alert("已複製");
+}
+</script>
 
 </div>
 <div class="sc-fzoVTD Atfvz">本站為遊戲愛好者共同建立，與遊戲本身毫無關係。<br>本站之資訊蒐集自Discord頻道及各公會，素材皆取自遊戲網頁。</div>
