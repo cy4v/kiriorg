@@ -51,37 +51,42 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-c
 <p id="loading">loading...</p>
 <!--
 
-存在証明する“蒼”生きてゆくための証
-響け　この胸のファクター
-感情共鳴する“奏”強く解き放つ可能性(メロディ)
-今日だって　歌い続けてる
+深い地の底で一人
+扉と鍵を探す
+おとぎ話は　ほら
+泡の様に全部消えて
+葛藤、残像だけ
+次の　頁(ページ)へ
 
-めくるめく時の中で　目を凝らして
-見せてあげる　私たちの未来を
+伸びてく枝葉が分かれて
+それぞれの道を行く
 
-ノイズ混じりの　ためらいかき消して
-LとRで描く　情熱と友情
+寂しい思い出だけが
+強く根を張ってる
 
-今なら分かる　あの哀しみが
-試していたのは
+まだ　貫いて　失って
+それでも挫けない
+心はどこに　器はどこに
 
-まだ　知らない自分
-どんな　明日も叶える力
-君と目覚めさせるため
-もう迷わない
+ただ　残されて　抜け落ちて
+それでも伝えたいよ
+魂の日々を　魂の意志を
+ずっと
 
-こだまするように
-期待は鳴り止まない
-揺るぎない真実
-私が選んだ　私へと
+魂の色は　何色ですか
+赤色ですか　青色ですか
+魂の色は　何色ですか
+透明な過去に　不透明な明日に
+生きるあなたは　何色ですか
 
-完全凌駕する“蒼”ここで生きている証
-掲げ　自由なるファクター
-感動共鳴する“想”あの日抱きしめた希望(ひかり)
-いつだって　信じ続けてる
+また　躓いて　転がって
+それでも砕けない
+魂の色は　何色ですか
 
-気まぐれな風の隙間　耳を澄まして
-聴かせてあげる　未来へのフレーズを
+ただ　傷ついて　強がって
+それでも見つけたいよ
+魂のカタチ　確かめてるよ
+ずっと
 
 -->
 </div>
@@ -94,14 +99,17 @@ LとRで描く　情熱と友情
           var items = [];
           for(var i in d) {
             var item = {};
-	    item.name = d[i].gsx$name.$t;
-	    item.title = d[i].gsx$title.$t;
-	    item.gain = d[i].gsx$gain.$t;
-	    item.thumbnail = d[i].gsx$thumbnail.$t;
-	    item.about = d[i].gsx$about.$t;
-	    item.trophy = d[i].gsx$trophy.$t;
-	    item.other = d[i].gsx$other.$t;
-	    items.push(item);
+            item.name = d[i].gsx$name.$t;
+            item.title = d[i].gsx$title.$t;
+            item.gain = d[i].gsx$gain.$t;
+            item.thumbnail = d[i].gsx$thumbnail.$t;
+            item.about = d[i].gsx$about.$t;
+            item.other = d[i].gsx$other.$t;
+            item.point = d[i].gsx$point.$t;
+            item.property = d[i].gsx$property.$t;
+            item.pvp = d[i].gsx$pvp.$t;
+            item.boss = d[i].gsx$boss.$t;
+            items.push(item);
           }
           console.table(items);
           for(var i in items) {
@@ -121,22 +129,30 @@ LとRで描く　情熱と友情
             <tr class="sc-AxiKw eSbheu">
             <th class="sc-AxhCb lnpmAI">初始稱號<td colspan=2 class="sc-AxhUy dRdZbR">${items[i].title}
             <tr class="sc-AxiKw eSbheu">
-            <th class="sc-AxhCb lnpmAI">獲得方式<td colspan=2 class="sc-AxhUy dRdZbR">${items[i].gain}
+            <th class="sc-AxhCb sc-fzpans dkAqSn">獲得方式<td colspan=2 class="sc-AxhUy dRdZbR">${items[i].gain}
             ${items[i].other}
+			<tr class="sc-AxiKw eSbheu">
+            <th class="sc-AxhCb sc-fzpans dkAqSn">轉生點推薦<td colspan=2 class="sc-AxhUy dRdZbR">${items[i].point}
+            <tr class="sc-AxiKw eSbheu">
+            <th class="sc-AxhCb lnpmAI">升級推薦<td colspan=2 class="sc-AxhUy dRdZbR">${items[i].property}
+            <tr class="sc-AxiKw eSbheu">
+            <th class="sc-AxhCb lnpmAI">PVP強度<td colspan=2 class="sc-AxhUy dRdZbR">${items[i].pvp}
+			<tr class="sc-AxiKw eSbheu">
+            <th class="sc-AxhCb lnpmAI">ボス戦定位<td colspan=2 class="sc-AxhUy dRdZbR">${items[i].boss}
             </table>
             </div></div>
 			
             `;
             $('.biVOqy').append(Card);
           }
-	  document.getElementById("loading").innerHTML = "";
+            document.getElementById("loading").innerHTML = "角色攻略僅供參考，內容由【２４】聖龍聯合提供。";
         });
       });
     </script>
 
 </div>
 </div>
-<div class="sc-fzoVTD Atfvz">本站為遊戲愛好者共同建立，與遊戲本身毫無關係。<br>本站之資訊蒐集自Discord頻道及各公會，素材皆取自遊戲網頁。</div>
+<div class="sc-fzoVTD Atfvz">對本頁面之攻略有疑問請找Discord@FutYue<br>本站為遊戲愛好者共同建立，與遊戲本身毫無關係。<br>本站之資訊蒐集自Discord頻道及各公會，素材皆取自遊戲網頁。</div>
 </div>
 </div> 
 
