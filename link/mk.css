@@ -8,14 +8,14 @@ a:hover{color:#6f81e5;text-decoration:underline}
 @media screen and (max-width:800px){.gHzJiR{padding:0px 24px}}
 .equHBw{margin:12px auto;max-width:760px;min-width:400px;width:92%}
 .Atfvz{color:rgb(204,204,204);font-size:12px;margin:48px 0px 20px;text-align:center}
+.gHzJiR{-moz-box-align:center;align-items:center;background:#00b5b5 none repeat scroll 0% 0%;box-sizing:border-box;box-shadow:rgba(0,0,0,0.3) 0px 2px 4px;display:flex;flex-wrap:wrap;margin-bottom:18px;padding:0px 15%;width:100%; isolation: isolate;}
 
 body.dark-mode .eoGDzK{-moz-box-align:center;align-items:center;color:white;display:flex;height:48px;padding:0px 12px;transition:all 0.16s ease 0s}
 body.dark-mode .eoGDzK:hover{background:rgba(255,255,255,0.2) none repeat scroll 0% 0%;color:white;text-decoration:none}
 body.dark-mode .eoGDzK.active{background:white none repeat scroll 0% 0%;color:#109090}
 body.dark-mode .dtmoaU{-moz-box-align:center;align-items:center;color:white;display:flex;height:48px;padding:0px 12px;transition:all 0.16s ease 0s}
 body.dark-mode .dtmoaU:hover{background:rgba(255,255,255,0.2) none repeat scroll 0% 0%;color:white;text-decoration:none}
-body.dark-mode .gHzJiR{-moz-box-align:center;align-items:center;background:#109090 none repeat scroll 0% 0%;box-sizing:border-box;box-shadow:rgba(0,0,0,0.3) 0px 2px 4px;display:flex;flex-wrap:wrap;margin-bottom:18px;padding:0px 15%;width:100%; isolation: isolate;}
-
+body.dark-mode .gHzJiR{background:#109090}
 body.dark-mode {background-color:#111;color: #ddd;}
 body.dark-mode a{background-color:transparent;color:#3f51b5;text-decoration:none}
 body.dark-mode a:hover{color:#6f81e5;text-decoration:underline}
@@ -45,8 +45,6 @@ body.light-mode .eoGDzK:hover{background:rgba(255,255,255,0.2) none repeat scrol
 body.light-mode .eoGDzK.active{background:white none repeat scroll 0% 0%;color:#00b5b5}
 body.light-mode .dtmoaU{-moz-box-align:center;align-items:center;color:white;display:flex;height:48px;padding:0px 12px;transition:all 0.16s ease 0s}
 body.light-mode .dtmoaU:hover{background:rgba(255,255,255,0.2) none repeat scroll 0% 0%;color:white;text-decoration:none}
-body.light-mode .gHzJiR{-moz-box-align:center;align-items:center;background:#00b5b5 none repeat scroll 0% 0%;box-sizing:border-box;box-shadow:rgba(0,0,0,0.3) 0px 2px 4px;display:flex;flex-wrap:wrap;margin-bottom:18px;padding:0px 15%;width:100%; isolation: isolate;}
-
 body.light-mode a{background-color:transparent;color:#3f51b5;text-decoration:none}
 body.light-mode a:hover{color:#6f81e5;text-decoration:underline}
 body.light-mode .bcMPWx{border-spacing:0px;border:1px solid rgb(221,221,221);width:100%}
