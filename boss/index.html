@@ -1,22 +1,43 @@
 <!DOCTYPE html>
 <html lang=zh-Hant-TW>
 <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169222168-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-169222168-2');
+</script>
+<meta charset=utf-8>
+<meta name="description" content="我的桐人(mykirito)非官方攻略網站。提供各式快速的數據查詢，讓你能更方便的攻略艾恩葛朗特。" />
+<meta property="og:locale" content="zh-Hant-TW" />
+<meta property="og:title" content="Boss列表 - 我的桐人攻略網" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://mykirito.org/boss/" />
+<meta property="og:image" content="https://mykirito.org/link/image.jpg" />
+<meta property="og:image:alt" content="只能用那一招了嗎" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="315" />
+<meta property="og:description" content="我的桐人(mykirito)非官方攻略網站。提供各式快速的數據查詢，讓你能更方便的攻略艾恩葛朗特。" />
+<meta property="og:site_name" content="我的桐人攻略網">
 <meta name=viewport content="width=device-width, initial-scale=1.0">
 <title>我的桐人攻略網</title>
-<link rel="stylesheet" href="https://cy4v.github.io/kiriorg/link/mk.css" type="text/css" />
-
+<link rel="stylesheet" href="https://mykirito.org/link/mk.css" type="text/css" />
+<link rel="icon" href="link/favicon.png" sizes="120x120" type="image/png">
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 
 <body id="body" class="dark-mode"> 
 <div id=root>
 <nav class="sc-fzomuh gHzJiR">
-<a class="sc-fzqAui eoGDzK" style="color:white;text-decoration:none" href="https://mykirito.nctu.me/">我的首頁</a>
-<a class="sc-fzqAui eoGDzK" style="color:white;text-decoration:none" href="https://mykirito.nctu.me/exp/" >等級經驗</a>
-<a class="sc-fzqAui eoGDzK" style="color:white;text-decoration:none" href="https://mykirito.nctu.me/achievements/">成就點數</a>
-<a aria-current=page class="sc-fzqAui eoGDzK active" style="text-decoration:none" href="https://mykirito.nctu.me/boss/">Boss列表</a>
-<a class="sc-fzqAui eoGDzK" style="color:white;text-decoration:none" href="https://mykirito.nctu.me/character/">角色資訊</a>
-<a class="sc-fzqAui eoGDzK" style="color:white;text-decoration:none" href="https://mykirito.nctu.me/memory/">劍士之碑</a>
-<a class="sc-fzqAui eoGDzK" style="color:white;text-decoration:none" href="https://mykirito.nctu.me/link/">傳送陣</a>
+<a class="sc-fzqAui eoGDzK" style="color:white;text-decoration:none" href="https://mykirito.org/">我的首頁</a>
+<a class="sc-fzqAui eoGDzK" style="color:white;text-decoration:none" href="https://mykirito.org/exp/">等級經驗</a>
+<a class="sc-fzqAui eoGDzK" style="color:white;text-decoration:none" href="https://mykirito.org/achievements/">成就點數</a>
+<a aria-current=page class="sc-fzqAui eoGDzK active" style="text-decoration:none" href="https://mykirito.org/boss/">Boss列表</a>
+<a class="sc-fzqAui eoGDzK" style="color:white;text-decoration:none" href="https://mykirito.org/character/">角色資訊</a>
+<a class="sc-fzqAui eoGDzK" style="color:white;text-decoration:none" href="https://mykirito.org/zatsudan/">遊戲雜談</a>
+<a class="sc-fzqAui eoGDzK" style="color:white;text-decoration:none" href="https://mykirito.org/link/">傳送陣</a>
 <a class="sc-fzqAui eoGDzK" style="color:white;text-decoration:none" onclick="togglePageContentLightDark()"><svg viewBox="0 0 93.534 110" style=width:28px fill=#fff><path d="M56.399 80.107v-2.822c0-4.96 2.015-9.725 5.529-13.073 4.396-4.189 6.817-9.839 6.817-15.909 0-12.119-9.859-21.978-21.978-21.978-.827 0-1.667.046-2.496.138-10.5 1.161-18.86 10.013-19.447 20.591a21.998 21.998 0 006.64 17.02c3.604 3.496 5.671 8.31 5.671 13.208v2.824a5.444 5.444 0 005.438 5.438h8.387a5.442 5.442 0 005.439-5.437zm-4 0a1.44 1.44 0 01-1.438 1.438h-8.387a1.44 1.44 0 01-1.438-1.438v-2.824c0-5.973-2.51-11.833-6.886-16.079a18 18 0 01-5.431-13.927c.48-8.65 7.312-15.888 15.893-16.837a18.699 18.699 0 012.057-.114c9.913 0 17.978 8.064 17.978 17.978 0 4.965-1.98 9.586-5.576 13.013-4.302 4.099-6.77 9.919-6.77 15.969v2.821zM53.276 87.521H40.258a1.5 1.5 0 100 3h13.019a1.5 1.5 0 10-.001-3zM54.776 93.761a1.5 1.5 0 00-1.5-1.5H40.258a1.5 1.5 0 100 3h13.019a1.5 1.5 0 001.499-1.5zM11.5 48.267h8.643a1.5 1.5 0 100-3H11.5a1.5 1.5 0 100 3zM83.534 46.767a1.5 1.5 0 00-1.5-1.5h-8.643a1.5 1.5 0 100 3h8.643a1.5 1.5 0 001.5-1.5zM45.267 11.5v8.643a1.5 1.5 0 103 0V11.5a1.5 1.5 0 10-3 0zM70.644 20.769l-6.111 6.111a1.5 1.5 0 102.122 2.121l6.111-6.111a1.5 1.5 0 10-2.122-2.121zM29.001 64.533a1.5 1.5 0 00-2.121 0l-6.111 6.111a1.5 1.5 0 102.122 2.121l6.111-6.111a1.5 1.5 0 00-.001-2.121zM26.88 29.001c.293.293.677.439 1.061.439a1.5 1.5 0 001.061-2.56l-6.111-6.111a1.5 1.5 0 10-2.121 2.121zM70.644 72.765c.293.293.677.439 1.061.439a1.5 1.5 0 001.061-2.56l-6.111-6.111a1.5 1.5 0 10-2.121 2.121zM51.521 98.5a1.5 1.5 0 00-1.5-1.5h-6.509a1.5 1.5 0 100 3h6.509a1.5 1.5 0 001.5-1.5z"></path></svg></a>
 </nav>
 
