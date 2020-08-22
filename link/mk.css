@@ -68,6 +68,7 @@ body.dark-mode .hRBsWH{border:1px solid rgb(68,68,68)}
 body.dark-mode .eoGDzK.active{color:#109090}
 body.dark-mode .gHzJiR{background:#109090}
 
+//from https://letswrite.tw/js-collapse-accordion/
 *, *::before, *::after {box-sizing: border-box;}
 .augurio-collapse .title-box, .augurio-collapse .contents-box {border: 1px solid #CCC;}
 .augurio-collapse .title-box, .augurio-collapse .contents {padding: 12px; }
@@ -109,6 +110,7 @@ body.dark-mode .gHzJiR{background:#109090}
           transition: height .3s ease; }
 .augurio-collapse .collapse:last-of-type .contents-box {
   border-bottom: 1px solid #CCC; }
+
 body.dark-mode .augurio-collapse .icons span {
     display: block;
     width: 12px;
