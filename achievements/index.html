@@ -114,11 +114,11 @@ function togglePageContentLightDark() {
   var currentClass = body.className
   var newClass = body.className == 'dark-mode' ? 'light-mode' : 'dark-mode'
   body.className = newClass
-  document.cookie = 'theme=' + (newClass == 'light-mode' ? 'light' : 'dark')
+  document.cookie = 'theme3=' + (newClass == 'light-mode' ? 'light' : 'dark')
   console.log('Cookies are now: ' + document.cookie)
 }
 function isDarkThemeSelected() {
-  return document.cookie.match(/theme=dark/i) != null
+  return document.cookie.match(/theme3=dark/i) != null
 }
 function setThemeFromCookie() {
   var body = document.getElementById('body')
