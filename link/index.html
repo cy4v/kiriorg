@@ -88,20 +88,20 @@ function copyFunction() {
   document.execCommand("copy");
   alert("已複製");
 }
+function isDarkThemeSelected() {
+  return document.cookie.match(/theme6=dark/i) != null
+}
+function setThemeFromCookie() {
+  var body = document.getElementById('body')
+  body.className = isDarkThemeSelected() ? 'dark-mode' : 'light-mode'
+}
 function togglePageContentLightDark() {
   var body = document.getElementById('body')
   var currentClass = body.className
   var newClass = body.className == 'dark-mode' ? 'light-mode' : 'dark-mode'
   body.className = newClass
-  document.cookie = 'theme7=' + (newClass == 'light-mode' ? 'light' : 'dark')
+  document.cookie = 'theme6=' + (newClass == 'light-mode' ? 'light' : 'dark') + '; SameSite=Strict; Path=/; Expires=Wed, 18 Oct 2022 12:00:00 GMT'
   console.log('Cookies are now: ' + document.cookie)
-}
-function isDarkThemeSelected() {
-  return document.cookie.match(/theme7=dark/i) != null
-}
-function setThemeFromCookie() {
-  var body = document.getElementById('body')
-  body.className = isDarkThemeSelected() ? 'dark-mode' : 'light-mode'
 }
 (function() {
   setThemeFromCookie()
