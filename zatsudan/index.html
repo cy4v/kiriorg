@@ -70,7 +70,7 @@ function togglePageContentLightDark() {
   var currentClass = body.className
   var newClass = body.className == 'dark-mode' ? 'light-mode' : 'dark-mode'
   body.className = newClass
-  document.cookie = 'theme6=' + (newClass == 'light-mode' ? 'light' : 'dark') + ';Path=/;Expires=Wed, 18 Oct 2022 12:00:00 GMT;'"
+  document.cookie = 'theme6=' + (newClass == 'light-mode' ? 'light' : 'dark') + ';Expires=Wed, 18 Oct 2022 12:00:00 GMT'"
   console.log('Cookies are now: ' + document.cookie)
 }
 (function() {
